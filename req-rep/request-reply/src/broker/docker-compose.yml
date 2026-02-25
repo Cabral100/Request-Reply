@@ -33,5 +33,5 @@ services:
       - ./cliente.py:/app/main.py
     depends_on:
       - servidor
-    deploy:
-      replicas: 1
+    stdin_open: true
+    tty: true
